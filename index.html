@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Trivia</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+ 
+  <body>
+    <!-- Aquí inicia el menú de navegación.
+   'href' es para referenciar a otra página-->    
+    <header class="header">
+      <nav class="nav">
 
+        <a class="logo nav-link">Trivia de literatura</a>
+        <ul class="nav-menu">
+
+         <li class="nav-menu-item">
+           <a href="#" class="nav-menu-link nav-link">Inicio</a></li>
+           
+         <li class="nav-menu-item">
+            <a href="#" class="nav-menu-link nav-link">Acerca de nosotras</a></li>
+        </ul>
+      </nav>
+    </header>
+
+<br>
+  <!-- El método get permite enviar datos al enlace (action) que coloquemos.-->
+  <form action="" name="formulario" method="get" id="form1" >
+
+    <label>Ingresa tu nombre:</label>
+    <input type="text" name="nombre" id="nombre" maxlength="20" placeholder="Ingresa tu nombre" value="">
+    <!-- value almecena el nombre ingresado-->
+    
+    <input type="button" name="button" id="btn" value="Jugar">
+  </form>
+
+<!--Instanciar un div con un ID único y display:none le digo que inicialmente no se muestre. -->
+<div id="flotante" style="display:none;">
