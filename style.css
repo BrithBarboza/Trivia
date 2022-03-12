@@ -1,1 +1,102 @@
-
+/*Selector universal => se aplica a todo el documento*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: sans-serif;
+    background-color: lavenderblush;
+    padding: 120px 10px 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  header {
+    background-color: purple;
+    height: 80px;
+    position: fixed; /*no se mueve al subir y bajar de pag*/
+    width: 100%;
+    top:0%;
+    left: 0%;
+    border: 1px solid lightgray;
+  }
+  .nav{
+  display: flex; /*tipo de visualizacion*/
+  justify-content: space-between;
+  max-width: 992px;
+  margin: 0 auto;
+  }
+  .nav-link{
+    color: lavenderblush;
+    text-decoration: none;
+  }
+  .logo{
+    font-size: 30px;
+    font-weight:bold;
+    padding: 0 40px;
+    line-height: 80px;
+  }
+  .nav-menu{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+  }
+  .nav-menu-item{
+    font-size: 15px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;  
+  }
+  /*A cada item del menú le otorgo propiedades*/
+  .nav-menu-link{
+    padding: 8px 12px;
+    border-radius:3px;
+  }
+  /*llamo a la acción del mouse y le agrego una propiedad de color =>*/
+  .nav-menu-link:hover{
+  background-color: coral;
+  }
+  
+  #form1{
+    display: flex;
+    aling-items: center;
+    flex-direction: column;
+    padding: 8%;
+    margin: 5%;
+    border: 1px solid purple;
+    border-radius: 4px;
+  }
+  #nombre{
+    width: 300px;
+    height: 40px;
+    border-color: purple;
+    border-radius: 5px;
+    margin: 2%;
+    padding-left: 3%;
+  }
+  
+  #flotante{
+    padding: 0% 20%;
+  }
+  fieldset{
+    width: 550px;
+  }
+  input{
+     margin: 2%;
+  }
+  fieldset{
+    padding-left:2%;
+  }
+  input[id^=b]{
+    width: 100px;
+    height: 30px;
+    border-color: purple;
+    border-radius: 5px;
+    background: none;
+  }
+  #b1, #b2{
+    width: 160px;
+    height: 35px;
+  }
+  

@@ -36,3 +36,52 @@
 
 <!--Instanciar un div con un ID único y display:none le digo que inicialmente no se muestre. -->
 <div id="flotante" style="display:none;">
+
+  <form action="" target="_top" name="triviaLiteratura" method="get" id="form2"> <!-- elemento que
+    define el formulario y los atributos que determinan el
+    comportamiento del formulario.-->
+
+    <p id="saludo"></p> <!-- parrafo vacio donde se ingresará el saludo-->  <br>
+
+      <fieldset id="q1">  <!--organizar en grupos los campos de un formulario -->
+        <legend> ¿Qué novela no ha sido llevada al cine? </legend>  <br>
+        <!-- radio buttons-->
+            <label><input type="radio" id="r1_1" name="pregunta1" value="first_radio" /> La conciencia del límite último de Carlos Calderón Fajardo</label> <br><br>
+            <label><input type="radio" id="r1_2" name="pregunta1" value="second_radio"/>La fiesta del chivo de Mario Vargas Llosa</label> <br><br>
+            <label><input type="radio" id="r1_3" name="pregunta1" value="third_radio"/>La hora azul de Alonso Cueto Caballero</label> <br><br>
+            
+     </fieldset>
+     <br><br>
+
+     <fieldset  id="q2">
+       <legend> Tuvo como profesor a César Vallejo y escribió sobre él.</legend>  <br> 
+       <label><input type="radio" id="r2_1" name="pregunta2" value="fourth_radio"/>Mario Vargas Llosa</label><br><br> 
+       <label><input type="radio" id="r2_2" name="pregunta2" value="fifth_radio"/>Julio Ramón Ribeyro</label><br><br>
+       <label><input type="radio" id="r2_3" name="pregunta2" value="sixth_radio"/>Ciro Alegría</label><br><br>
+    </fieldset>
+     <br><br>
+
+    <fieldset  id="q3">
+      <legend> No es una poeta peruana. </legend> <br>
+       <label><input type="radio" id="r3_1" name="pregunta3" value="seventh_radio"/>Rosella Di Paolo</label><br><br> 
+       <label><input type="radio" id="r3_2" name="pregunta3" value="eight_radio"/>Alejandra Pizarnik</label><br><br>
+       <label><input type="radio" id="r3_3" name="pregunta3" value="ninth_radio"/>Carmén Ollé</label><br><br>
+   </fieldset>
+    <br><br>
+
+    <input type="button" name="button" id="b1" value="Comprueba respuestas">
+    <input type="button" name="button" id="b2" value="Volver a jugar">
+    <br><br>
+
+    <!--<p id="puntaje"></p>-->
+    
+    <p id="respuesta1Jugador"></p>
+    <p id="respuesta2Jugador"></p>
+    <p id="respuesta3Jugador"></p>
+    <p id="respuestasCorrectas"></p>
+
+    </form>
+  </div>
+  <script src="script.js"></script>
+  </body>
+</html>
