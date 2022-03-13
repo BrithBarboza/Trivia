@@ -4,22 +4,28 @@
     padding: 0;
     box-sizing: border-box;
   }
+  @font-face {
+    font-family: Poppins;
+    src: url(Fonts/Poppins-Regular.ttf);
+}
   body {
+    /* margin-top: 300px; */
+    background-image: url(./Images/fondo_1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     font-family: sans-serif;
-    background-color: lavenderblush;
     padding: 120px 10px 0;
     display: flex;
     align-content: center;
     justify-content: center;
   }
   header {
-    background-color: purple;
     height: 80px;
     position: fixed; /*no se mueve al subir y bajar de pag*/
     width: 100%;
     top:0%;
     left: 0%;
-    border: 1px solid lightgray;
   }
   .nav{
   display: flex; /*tipo de visualizacion*/
@@ -28,7 +34,7 @@
   margin: 0 auto;
   }
   .nav-link{
-    color: lavenderblush;
+    color: aliceblue;
     text-decoration: none;
   }
   .logo{
@@ -44,6 +50,7 @@
   }
   .nav-menu-item{
     font-size: 15px;
+    font-weight: bold;
     margin: 0 10px;
     line-height: 80px;
     text-transform: uppercase;  
@@ -60,13 +67,13 @@
   
   #form1{
     display: flex;
-    aling-items: center;
+    align-items: center;
     flex-direction: column;
     padding: 8%;
     margin: 5%;
-    border: 1px solid purple;
-    border-radius: 4px;
+    color: aliceblue;
   }
+  
   #nombre{
     width: 300px;
     height: 40px;
@@ -89,11 +96,13 @@
     padding-left:2%;
   }
   input[id^=b]{
-    width: 100px;
-    height: 30px;
-    border-color: purple;
-    border-radius: 5px;
-    background: none;
+    width:99px;
+    height: 40px;
+    margin: auto;
+    border-radius:8px;
+    background-color:#EC255A;
+    color:aliceblue;
+    border: none;
   }
   #b1, #b2{
     width: 160px;
