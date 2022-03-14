@@ -2,22 +2,38 @@ const btn = document.getElementById('btn');
 const nombre = document.getElementById('nombre');
 const form1 = document.getElementById('form1');
 const div = document.getElementById('flotante');
+//opciones de juego
+const gameOptions = document.getElementById('gameOptions');
+const gameThemes = document.querySelectorAll('div[id^="game"]')
 
-//Botón jugar
+// Botón jugar
 btn.addEventListener('click', () =>{
   if(nombre.value == "") {
     alert('Ingresa tu nombre')
   } else{
     document.getElementById("saludo").innerHTML = "¡Hola, " + nombre.value + "!";
-    div.style.display = '';
     form1.style.display = 'none'; 
+    gameOptions.style.display = '';
   }
 });
 //div contiene el primer forms
 //form1 contiene las preguntas
 //.addEventListener sets up a function that will be called whenever the specified event is delivered to the target.
 
-//Botón Comprueba respuestas
+for(let i=0; i<gameThemes.length; i++){
+  gameThemes[i].addEventListener('click', () =>{
+    gameOptions.style.display = 'none';
+    if( i == 0){
+      div.style.display = '';
+    }else if (i == 1){
+      console.log('elegiste tema 2')
+    }else if (i == 2){
+      console.log('elegiste tema 3')
+    }
+  })
+}
+
+// Botón Comprueba respuestas
 const b1 = document.getElementById('b1')
 b1.addEventListener('click', () => {
   
@@ -52,7 +68,7 @@ Hacer funcion para calidar 3 botones marcados
 
 });
 
-//Al dar clic a Volver a Jugar
+// Al dar clic a Volver a Jugar
 const b2 = document.getElementById('b2')
 b2.addEventListener('click', () => {
   document.getElementById("form1").reset();
@@ -60,11 +76,11 @@ b2.addEventListener('click', () => {
   form1.style.display = '';
   div.style.display = 'none';
 
-  //none oculta las preguntas, '' las muestra
+  // none oculta las preguntas, '' las muestra
   document.getElementById("respuesta1Jugador").innerText = "";
   document.getElementById("respuesta2Jugador").innerText = "";
   document.getElementById("respuesta3Jugador").innerText = "";
   document.getElementById("respuestasCorrectas").innerHTML = ""
-  //vaciar datos del juego anterior
+  // vaciar datos del juego anterior
   });
   
